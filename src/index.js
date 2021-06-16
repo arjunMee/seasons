@@ -30,7 +30,7 @@ class App extends React.Component {
     if (!this.state.errorMessage && this.state.lat) {
       return <SeasonDisplay lat={this.state.lat} />
     }
-
+    // this will pass the message props and then display it
     return <Spinner message='Please accept location request' />
   }
 
